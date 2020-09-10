@@ -34,6 +34,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
   gem 'jasmine'
   gem 'coveralls', require: false
+  gem 'sqlite3', '~> 1.4'
 end
 
 group :development do

@@ -1,6 +1,6 @@
 # Convo - converse livremente com desconhecidos
 
-[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)	[![Maintainability](https://api.codeclimate.com/v1/badges/269daf309d45721c16c0/maintainability)](https://codeclimate.com/github/ThaisLasso/convo/maintainability)	[![Coverage Status](https://coveralls.io/repos/github/ThaisLasso/convo/badge.svg?branch=master)](https://coveralls.io/github/ThaisLasso/convo?branch=master)
+[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/github/ThaisLasso/convo)	[![Maintainability](https://api.codeclimate.com/v1/badges/269daf309d45721c16c0/maintainability)](https://codeclimate.com/github/ThaisLasso/convo/maintainability)	[![Coverage Status](https://coveralls.io/repos/github/ThaisLasso/convo/badge.svg?branch=master)](https://coveralls.io/github/ThaisLasso/convo?branch=master)
 
 
 

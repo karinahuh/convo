@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/ThaisLasso/convo.svg?branch=master)](https://travis-ci.com/ThaisLasso/convo)	[![Maintainability](https://api.codeclimate.com/v1/badges/269daf309d45721c16c0/maintainability)](https://codeclimate.com/github/ThaisLasso/convo/maintainability)	[![Coverage Status](https://coveralls.io/repos/github/ThaisLasso/convo/badge.svg?branch=master)](https://coveralls.io/github/ThaisLasso/convo?branch=master)
 
-
+[Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2465884)
 
  [Heroku](https://convo-esi.herokuapp.com/)
 

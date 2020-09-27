@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Preferences Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Preferences</th>
+      <th>Users</th>
+      <th>Options</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @preferences_users.each do |preferences_user| %>
+      <tr>
+        <td><%= preferences_user.preferences_id %></td>
+        <td><%= preferences_user.users_id %></td>
+        <td><%= preferences_user.options %></td>
+        <td><%= link_to 'Show', preferences_user %></td>
+        <td><%= link_to 'Edit', edit_preferences_user_path(preferences_user) %></td>
+        <td><%= link_to 'Destroy', preferences_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Preferences User', new_preferences_user_path %>

@@ -44,8 +44,9 @@ class UsersController < ApplicationController
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
+#sign_in(@user)
       else
-        format.html { render :edit }
+        format.html { render action: :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

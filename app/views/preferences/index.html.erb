@@ -1,15 +1,33 @@
 <p id="notice"><%= notice %></p>
+<br>
+<h1>Selecione suas preferências para uma conversa :</h1>
 
-<h1>Preferences</h1>
+<h2> Gênero:</h2>
+<div> 
+  <label for="masculino"> Masculino </label>
+  <input type = "checkbox" name =" masculino">
+</div>
 
+<div>
+  <label for="feminino"> Feminino </label>
+  <input type = "checkbox" name ="feminino">
+</div>
+
+<div>
+  <label for="não-binário">Não-Binário</label>
+  <input type = "checkbox" name ="não-binário">
+</div>
+<h2>Faixa de Idade : </h2>
+<form action="" method="post" name="edit" oninput="age_output.value=parseInt(age.value);">
+    <h4>Entre 18 e 
+    <output name="age_output" for="start" ></output> </h4>
+
+    18<input type="range" id="start" name="age" min="18" max="60" />60
+</form>
+<br>
+<button>Conversar!</button>
+<!--
 <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @preferences.each do |preference| %>
       <tr>
@@ -25,3 +43,5 @@
 <br>
 
 <%= link_to 'New Preference', new_preference_path %>
+-->
+<br>

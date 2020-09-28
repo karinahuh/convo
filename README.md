@@ -11,7 +11,6 @@ A ideia surgiu da falta que alguns membros do grupo sentem de conversar com pess
 ## Integrantes
 
 - 9844922 Ada Maria Cayres Fernandez
-- 10724312 Gabriel André Melo de Oliveira Silva
 - 10723822 Karina Hae Eun Huh
 - 10723687 Luana Santos Pereira
 - 10724156 Talmir Pereira Canuto Costa

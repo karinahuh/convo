@@ -6,7 +6,7 @@ rvm:
 script:
  - bundle update --bundler
  - bundle exec rake db:migrate
- -  xvfb-run --server-args="-screen 0 1024x768x24" bundle exec rspec spec
+ - bundle exec rspec spec
  - bundle exec cucumber
 
 

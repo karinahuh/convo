@@ -14,6 +14,6 @@ RSpec.describe "preferences/index", type: :view do
 
   it "renders a list of preferences" do
     render
-    assert_select "tr>td", text: "Name".to_s, count: 2
+    assert_select "tr>td", text: "Name".to_s, count: 0
   end
 end

@@ -4,7 +4,7 @@ class Users < ActiveRecord::Migration[6.0]
 	t.string :nickname
 	t.string :email
 	t.integer :age
-	t.integer :genger
+	t.integer :gender
 	t.string :password
 
 	t.timestamps

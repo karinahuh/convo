@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_11_224436) do
+ActiveRecord::Schema.define(version: 2020_10_13_193008) do
 
   create_table "messages", force: :cascade do |t|
     t.text "content"
@@ -22,6 +22,9 @@ ActiveRecord::Schema.define(version: 2020_10_11_224436) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "gender"
+    t.integer "min_age"
+    t.integer "max_age"
   end
 
   create_table "preferences_users", force: :cascade do |t|

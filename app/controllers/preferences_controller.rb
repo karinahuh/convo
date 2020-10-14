@@ -69,6 +69,6 @@ class PreferencesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def preference_params
-      params.require(:preference).permit(:name)
+      params.require(:preference).permit(:gender, :min_age, :max_age)
     end
 end

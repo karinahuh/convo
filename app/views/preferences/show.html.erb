@@ -1,8 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @preference.name %>
+  <strong>Gender:</strong>
+  <%= @preference.gender %>
+</p>
+
+<p>
+  <strong>Min age:</strong>
+  <%= @preference.min_age %>
+</p>
+
+<p>
+  <strong>Max age:</strong>
+  <%= @preference.max_age %>
 </p>
 
 <%= link_to 'Edit', edit_preference_path(@preference) %> |

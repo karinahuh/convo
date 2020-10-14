@@ -3,7 +3,9 @@ require 'rails_helper'
 RSpec.describe "preferences/edit", type: :view do
   before(:each) do
     @preference = assign(:preference, Preference.create!(
-      name: "MyString"
+      gender: "MyString",
+      min_age: "MyString",
+      max_age: "MyString"
     ))
   end
 
@@ -12,7 +14,11 @@ RSpec.describe "preferences/edit", type: :view do
 
     assert_select "form[action=?][method=?]", preference_path(@preference), "post" do
 
-      assert_select "input[name=?]", "preference[name]"
+      assert_select "input[name=?]", "preference[gender]"
+
+      assert_select "input[name=?]", "preference[min_age]"
+
+      assert_select "input[name=?]", "preference[max_age]"
     end
   end
 end

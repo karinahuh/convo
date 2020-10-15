@@ -10,8 +10,6 @@ A ideia surgiu da falta que alguns membros do grupo sentem de conversar com pess
 
 ## Integrantes
 
-- 9844922 Ada Maria Cayres Fernandez
 - 10723822 Karina Hae Eun Huh - karinahuh
 - 10723687 Luana Santos Pereira - luanaDSP
 - 10724156 Talmir Pereira Canuto Costa - TalmirP
-- 10724222 Thais Lasso Terense

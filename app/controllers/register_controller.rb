@@ -6,7 +6,9 @@ class RegisterController < ApplicationController
 			redirect-to :action 'index', id: @user.id notice: 'Seja bem Vind@!'
 		else 
 			render action: 'new'
-	end
+
+                end
+        end
 end
 
 params.require(:user).permit(:nickname, :email, :password, :age, :gender)

@@ -8,17 +8,25 @@ Dado('que estou na tela de login') do
 end
   
 Dado('informo apelido válido') do
-    fill_in 'Nickname', :with => "Karina" 
+    fill_in 'Nickname', :with => "Luana" 
 end
   
-Dado('informo senha inválido') do
-    fill_in 'Password', :with => "000" 
+Dado('informo senha válida') do
+    fill_in 'Password', :with => "456" 
 end
   
-Quando('clico em entrar') do
+E('clico em entrar') do
     click_button 'Login'
 end
 
-Então('uma mensagem de erro deve aparecer') do
+Dado('informo senha inválida') do
+    fill_in 'Password', :with => "123" 
+  end
+  
+  Então('uma mensagem de erro deve aparecer') do
     expect(page).to have_content 'Nickname or password is invalid'
-end
+  end
+  
+  Dado('informo apelido inválido') do
+    fill_in 'Nickname', :with => "Joana"
+  end

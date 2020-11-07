@@ -8,5 +8,5 @@ Funcionalidade: Preferências
 		E selecionei o gênero
 		E selecionei a idade mínima
 		E selecionei a idade máxima
-		Quando clico em conversar
+		Quando clico em criar preferência
 		Então as preferências devem ser salvas

@@ -15,18 +15,22 @@ Dado('informo senha válida') do
     fill_in 'Password', :with => "456" 
 end
   
-E('clico em entrar') do
+Quando ('clico em entrar') do
     click_button 'Login'
+end
+
+Então('o usuario deve ser logado') do
+    visit 'https://convo-esi.herokuapp.com/'
 end
 
 Dado('informo senha inválida') do
     fill_in 'Password', :with => "123" 
-  end
+end
   
-  Então('uma mensagem de erro deve aparecer') do
+Então('uma mensagem de erro deve aparecer') do
     expect(page).to have_content 'Nickname or password is invalid'
-  end
+end
   
-  Dado('informo apelido inválido') do
+Dado('informo apelido inválido') do
     fill_in 'Nickname', :with => "Joana"
-  end
+end

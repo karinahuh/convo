@@ -19,7 +19,7 @@ Dado('que estou na tela de preferências') do
     fill_in 'Max age', :with => "60"
   end
   
-  Quando('clico em conversar') do
+  Quando('clico em criar preferência') do
     click_button 'Create Preference'
   end
   

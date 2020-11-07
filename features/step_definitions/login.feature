@@ -3,20 +3,21 @@
 Funcionalidade: Login
   Queremos logar 
 
-  Cenário: 
+  Cenário: Login com sucesso
     Dado que estou na tela de login
-	E informo apelido válido
-	E informo senha válida
-  E clico em entrar
+	  E informo apelido válido
+	  E informo senha válida
+    Quando clico em entrar
+    Então o usuario deve ser logado
 
-  Cenário: 
+  Cenário: Login com senha inválida
     Dado que estou na tela de login
 	  E informo apelido válido
 	  E informo senha inválida
     Quando clico em entrar 
     Então uma mensagem de erro deve aparecer
 
-    Cenário: 
+    Cenário: Login com apelido inválido
     Dado que estou na tela de login
 	  E informo apelido inválido
 	  E informo senha válida

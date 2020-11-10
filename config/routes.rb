@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
 
-  resources :preferences_users
   resources :preferences
   resources :users
   resources :sessions

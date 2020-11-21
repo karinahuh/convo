@@ -2,6 +2,13 @@ require 'rails_helper'
 
 RSpec.describe "preferences/index", type: :view do
   before(:each) do
+    @user = assign(:user, User.create!(
+      nickname: "Ana",
+      email: "ana@email.com",
+      age: "21",
+      gender: "1",
+      password: "123"
+    )),
     assign(:preferences, [
       Preference.create!(
         gender: "gender",

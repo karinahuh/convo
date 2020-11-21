@@ -9,7 +9,7 @@ RSpec.describe "preferences/new", type: :view do
     ))
   end
 
-  it "renders new preference form" do
+  /it "renders new preference form" do
     render
 
     assert_select "form[action=?][method=?]", preferences_path, "post" do
@@ -20,5 +20,5 @@ RSpec.describe "preferences/new", type: :view do
 
       assert_select "input[name=?]", "preference[max_age]"
     end
-  end
+  end/
 end

@@ -1,4 +1,4 @@
-<%= form_with(model: preference, local: true) do |form| %>
+<%= form_with url: match_path, method: :get do |form| %>
   <% if preference.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(preference.errors.count, "error") %> prohibited this preference from being saved:</h2>
@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :gender %>
+    <%= form.label :gender, 'Gender' %>
     <%= form.text_field :gender %>
   </div>
 
   <div class="field">
-    <%= form.label :min_age %>
-    <%= form.text_field :min_age %>
+  <%= form.label :min_age, 'Min Age' %>
+  <%= form.text_field :min_age %>
   </div>
 
   <div class="field">
-    <%= form.label :max_age %>
+    <%= form.label :max_age, 'Max Age' %>
     <%= form.text_field :max_age %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Conversar' %>
   </div>
 <% end %>

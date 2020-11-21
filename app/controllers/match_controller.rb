@@ -1,17 +1,11 @@
-class MatchController < ApplicationController
-    def match(preference_params)
-        @usuario = User.where(gender: preference_params[gender]).and(User.where(min_age: preference_params[min_age])).and(User.where(max_age: preference_params[max_age]))
-        respond_to do |format|
-            if(@usuario)
-                redirect_to chat_path
-            else
-                render js: "alert('Não foi possível encontrar um match para você :( ');"
-            end
-        end 
-    end
-
-    private
-    def preference_params
-       params.require(:preference).permit(:gender, :min_age, :max_age)
-   end
+class MatchController < ApplicationController    
+    protect_from_forgery except: :match
+    def match
+		user = User.where('gender = ?  AND  age BETWEEN ? AND ?', params[:gender], params[:min_age], params[:max_age]).first
+		if user 
+			render js: "alert('Foi possível encontrar um match para você :) ');"
+		else
+			render js: "alert('Não foi possível encontrar um match para você :( ');"
+		end
+	end 
 end

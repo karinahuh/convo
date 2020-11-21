@@ -60,11 +60,13 @@ class PreferencesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_preference
       @preference = Preference.find(params[:id])
+      rescue ActiveRecord::RecordNotFound => e
+      @preference = nil
     end
 
     # Only allow a list of trusted parameters through.

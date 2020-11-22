@@ -27,16 +27,6 @@ ActiveRecord::Schema.define(version: 2020_10_13_193008) do
     t.integer "max_age"
   end
 
-  create_table "preferences_users", force: :cascade do |t|
-    t.integer "preferences_id"
-    t.integer "users_id"
-    t.integer "options"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["preferences_id"], name: "index_preferences_users_on_preferences_id"
-    t.index ["users_id"], name: "index_preferences_users_on_users_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "nickname"
     t.string "email"

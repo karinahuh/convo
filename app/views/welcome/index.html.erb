@@ -1,17 +1,14 @@
-<% if current_user %>
-	Logged in as <%= current_user.email %> 
-	<%= link_to "Log Out", logout_path %>
-	<%= link_to "Conversar", chat_path %>
-	<%= link_to "Preferences", "preferences/new" %>
-<% else %>
-	<%= link_to "Sign Up", signup_path %> or
-	<%= link_to "Log In", login_path %>
-<% end %>
-
+<img src="/logo.png" height="400px">
 
 <p id="notice"><%= notice %></p>
+<% if current_user %>
+	<h2> Welcome back </h2>
+	<button><%= link_to "Vamos começar", "preferences/new",  :style=>'color: #241B36; text-decoration: none' %></button> </br>
+	<button><%= link_to "Log Out", logout_path,  :style=>'color: #241B36; text-decoration: none' %></button>
+	
+<% else %>
+	<h2> Bem-vinde<h2>
+	<button><%= link_to "Sign Up", signup_path, :style=>'color: #241B36; text-decoration: none' %></button> ou
+	<button><%= link_to "Log In", login_path, :style=>'color: #241B36; text-decoration: none' %></button>
+<% end %>
 
-<h1>Hello, world!</h1>
-<p>
- 'Ahora' é agora: <%= Time.now %>
-</p>
